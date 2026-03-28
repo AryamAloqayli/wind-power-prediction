@@ -60,7 +60,8 @@ The real power curve shows the expected increasing trend with saturation, but wi
 
 This motivates the use of a theoretical curve as a structured reference.
 
-C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_projects\2figures\01_real_power_curve.png
+01_real_power_curve.png
+
 ---
 ### Theoretical Power Curve
 
@@ -68,7 +69,7 @@ The theoretical curve represents ideal turbine behavior: cut-in, nonlinear growt
 
 It encodes physical constraints and aligns well with real data, which explains its importance in the ML model. Deviations highlight environmental and operational effects not captured by the ideal model.
 
-C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_projects\2figures\02_theoretical_power_curve.png
+02_theoretical_power_curve.png
 ---
 
 ### Wind Speed Distribution
@@ -80,7 +81,8 @@ This means:
 - Extreme conditions are underrepresented  
 - Errors increase at high power levels  
 
-C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_projects\2figures\03_wind_speed_distribution.png
+03_wind_speed_distribution.png
+
 ---
 
 ### Physics Model vs Real Data
@@ -92,7 +94,8 @@ The physics model captures the general trend but deviates significantly:
 
 This shows that a simple cubic model is fundamentally incomplete.  
 
-C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_projects\2figures\04_physics_vs_real.png
+
+04_physics_vs_real.png
 
 ---
 
@@ -101,7 +104,9 @@ C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_pro
 The model follows the general trend but shows noticeable spread, especially at high power.  
 
 Because the same wind speed can produce different outputs, the model cannot uniquely determine power, leading to uncertainty.
-C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_projects\2figures\05_ml_ws_predicted_vs_actual.png
+
+05_ml_ws_predicted_vs_actual.png
+
 ---
 
 ### Residuals (Wind Speed Only Model)
@@ -109,7 +114,9 @@ C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_pro
 Residuals are centered around zero, but error increases with predicted power.  
 
 This is due to missing variables such as turbine control and operational effects, making the model less reliable at higher power levels.
-C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_projects\2figures\06_ml_ws_residuals.png
+
+06_ml_ws_residuals.png
+
 ---
 
 ### ML Prediction Curve (Wind Speed Only)
@@ -117,7 +124,9 @@ C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_pro
 The predicted curve is noisy and irregular.  
 
 This reflects the non-unique relationship between wind speed and power, where the model tries to fit noisy data without enough information.
-C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_projects\2figures\07_ml_ws_vs_real.png
+
+07_ml_ws_vs_real.png
+
 ---
 
 ### ML (Extended Features): Predicted vs Actual
@@ -125,7 +134,8 @@ C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_pro
 Predictions closely follow the ideal line with reduced spread.  
 
 Including additional features improves accuracy by capturing variations beyond wind speed.
-C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_projects\2figures\08_ml_extended_predicted_vs_actual.png
+
+08_ml_extended_predicted_vs_actual.png
 ---
 
 ### Residuals (Extended Features Model)
@@ -133,7 +143,9 @@ C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_pro
 Residuals remain centered around zero with smaller spread.  
 
 Some large errors persist, especially at high power, likely due to missing operational variables.
-C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_projects\2figures\09_ml_extended_residuals.png
+
+09_ml_extended_residuals.png
+
 ---
 
 ### Residuals vs Wind Speed (Extended Model)
@@ -141,7 +153,9 @@ C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_pro
 Error is larger in the mid-range, where power is most sensitive to changes.  
 
 At low and high speeds, behavior is more stable, leading to smaller errors. Remaining outliers indicate unmodeled effects.
-C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_projects\2figures\10_residuals_vs_wind_speed.png
+
+10_residuals_vs_wind_speed.png
+
 ---
 
 ### Model Comparison (MAE & RMSE)
@@ -149,7 +163,8 @@ C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_pro
 The physics model has the highest error.  
 
 The ML (wind speed only) model improves significantly, while the extended model achieves the lowest error, showing the importance of both model flexibility and additional features.
-C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_projects\2figures\11_model_comparison_errors.png
+11_model_comparison_errors.png
+
 ---
 
 ### Model Comparison (R²)
@@ -157,7 +172,9 @@ C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_pro
 The physics model has low explanatory power.  
 
 Both ML models achieve high R², with further improvement when using extended features.
-C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_projects\2figures\12_model_comparison_r2.png
+
+12_model_comparison_r2.png
+
 ---
 
 ### Feature Importance
@@ -167,7 +184,9 @@ C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_pro
 - Other features have minor impact  
 
 This shows the model mainly learns physical relationships, with additional features refining predictions.
-C:\Users\96650\OneDrive - King Saud University\Desktop\computational_physics_projects\2figures\13_feature_importance.png
+
+13_feature_importance.png
+
 ---
 
 ## Key Insights
