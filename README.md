@@ -165,6 +165,7 @@ At low and high speeds, behavior is more stable, leading to smaller errors. Rema
 The physics model has the highest error.  
 
 The ML (wind speed only) model improves significantly, while the extended model achieves the lowest error, showing the importance of both model flexibility and additional features.
+
 11_model_comparison_errors.png
 
 ---
