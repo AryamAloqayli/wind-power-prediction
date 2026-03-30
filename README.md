@@ -137,6 +137,7 @@ Predictions closely follow the ideal line with reduced spread.
 Including additional features improves accuracy by capturing variations beyond wind speed.
 
 08_ml_extended_predicted_vs_actual.png
+
 ---
 
 ### Residuals (Extended Features Model)
