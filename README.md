@@ -70,6 +70,7 @@ The theoretical curve represents ideal turbine behavior: cut-in, nonlinear growt
 It encodes physical constraints and aligns well with real data, which explains its importance in the ML model. Deviations highlight environmental and operational effects not captured by the ideal model.
 
 02_theoretical_power_curve.png
+
 ---
 
 ### Wind Speed Distribution
